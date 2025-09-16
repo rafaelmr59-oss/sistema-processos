@@ -36,18 +36,21 @@ function ListaProcessos({ processos, onEditar, onExcluir, onAndamentos }) {
               </td>
               <td className="botoes-acao">
                 <Botao 
+                  title="Andamentos"
                   icone={FaEye} 
                   cor="#e9ecef" 
                   corIcone="#495057" 
                   onClick={() => onAndamentos(proc)} 
                 />
                 <Botao 
+                  title="Editar Processo"
                   icone={FaEdit} 
                   cor="#e9ecef" 
                   corIcone="#495057"
                   onClick={() => onEditar(proc)} 
                 />
                 <Botao 
+                  title="Excluir Processo"
                   icone={FaTrash} 
                   cor="#e9ecef" 
                   corIcone="#dc3545" 

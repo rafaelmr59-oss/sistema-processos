@@ -136,8 +136,8 @@ export default function ModalAndamentos({ processo, onFechar, onAtualizarProcess
                   <p className="descricao">{a.descricao}</p>
                 </div>
                 <div className="acoes-item">
-                  <button className="botao-icone" onClick={() => editar(a)}><FaEdit /></button>
-                  <button className="botao-icone" onClick={() => excluir(a.id)}><FaTrash /></button>
+                  <button  className="botao-icone" title="Clique aqui para salvar" onClick={() => editar(a)}><FaEdit /></button>
+                  <button className="botao-icone"  title="Clique aqui para salvar" onClick={() => excluir(a.id)}><FaTrash /></button>
                 </div>
               </div>
             ))}
