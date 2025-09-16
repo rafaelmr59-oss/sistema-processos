@@ -1,0 +1,146 @@
+/* Fonte padrão e corpo da página */
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 32px;
+}
+
+/* Container principal */
+.container-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.titulo-cabecalho h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #343a40;
+}
+
+.titulo-cabecalho p {
+    margin: 0;
+    color: #6c757d;
+}
+
+/* Botões */
+button {
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 12px 24px;
+}
+
+button span {
+    display: inline-block;
+}
+
+/* Botão primário */
+.botao-primario {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Grid de cards de resumo */
+.cards-resumo {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.card-resumo {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.cabecalho-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.valor-card {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Lista de processos */
+.lista-processos {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.lista-processos h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+thead th {
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Tags de UF */
+.tag-uf {
+    background-color: #e9ecef;
+    color: #343a40;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Links de andamentos */
+.link-andamentos {
+    text-decoration: underline;
+    color: #495057;
+    cursor: pointer;
+}
+
+.botoes-acao {
+    display: flex;
+    gap: 16px;
+}

@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS sistema;
+
+USE sistema;
+
+CREATE TABLE IF NOT EXISTS processos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  numero VARCHAR(50) NOT NULL,
+  dataAbertura DATE NOT NULL,
+  descricao TEXT NOT NULL,
+  cliente VARCHAR(100) NOT NULL,
+  advogado VARCHAR(100) NOT NULL,
+  uf VARCHAR(2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS andamentos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  processo_id INT NOT NULL,
+  data DATE NOT NULL,
+  descricao TEXT NOT NULL,
+  FOREIGN KEY (processo_id) REFERENCES processos(id) ON DELETE CASCADE
+);

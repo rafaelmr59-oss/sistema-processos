@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8
+    container_name: mysql_crud
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: sistema
+    ports:
+      - "3301:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/init:/docker-entrypoint-initdb.d
+
+  backend:
+    build: ./backend
+    container_name: backend_crud
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: root123
+      DB_DATABASE: sistema
+    depends_on:
+      - db
+    command: ["node", "server.js"]
+
+  frontend:
+    build: ./frontend
+    container_name: frontend_crud
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  db_data:
