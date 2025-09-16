@@ -36,7 +36,7 @@ function ListaProcessos({ processos, onEditar, onExcluir, onAndamentos }) {
               </td>
               <td className="botoes-acao">
                 <Botao 
-                  title="Andamentos"
+                  title="Visualizar Andamentos"
                   icone={FaEye} 
                   cor="#e9ecef" 
                   corIcone="#495057" 
