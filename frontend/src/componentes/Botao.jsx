@@ -1,4 +1,4 @@
-function Botao({ icone: Icone, cor = "#007bff", corIcone = "#fff", texto, onClick }) {
+function Botao({ icone: Icone, cor = "#007bff", corIcone = "#fff", texto, onClick, title }) {
   return (
     <button 
       style={{ 
@@ -13,6 +13,7 @@ function Botao({ icone: Icone, cor = "#007bff", corIcone = "#fff", texto, onClic
         cursor: "pointer", 
         fontWeight: 600  
       }}  
+      title={title}
       onClick={onClick}
     >
       {Icone && <Icone />}
