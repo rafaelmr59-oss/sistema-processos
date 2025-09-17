@@ -8,11 +8,11 @@ Antes de rodar o projeto, instale:
 
 ## Git
 
-Windows:https://git-scm.com/downloads
+**Windows:** https://git-scm.com/downloads
 
-Mac: já vem com o Xcode Command Line Tools, ou Git for Mac
+**Mac:** já vem com o Xcode Command Line Tools, ou Git for Mac
 
-Linux (Ubuntu/Debian):
+**Linux (Ubuntu/Debian):**
 
 ```bash
 sudo apt update
@@ -42,12 +42,21 @@ Download Docker Desktop: https://www.docker.com/products/docker-desktop
 **Linux (Ubuntu/Debian):**
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install docker.io -y
+```
+
+```bash
 sudo systemctl enable --now docker
+```
+
+```bash
 sudo usermod -aG docker $USER
 ```
 
-# Docker Compose
+## Docker Compose
 
 **Windows / Mac:** já vem junto com Docker Desktop
 
